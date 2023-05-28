@@ -1,13 +1,13 @@
 import { type ChangeEvent, type FC } from "react";
 
 
-interface Props {
+interface CheckBoxProps {
     label: string;
     checked: boolean;
     onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
-const CheckBox: FC<Props> = ({label, checked, onChange}: Props) => {
+const CheckBox: FC<CheckBoxProps> = ({label, checked, onChange}: CheckBoxProps) => {
   return (
     <div>
         <label>
